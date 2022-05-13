@@ -50,6 +50,10 @@ function areaTriangulo(base, altura) {
   return (base * altura) / 2;
 }
 
+function alturaTrianguloIsosceles(base, lado) {
+  return Math.sqrt(lado * lado - (base * base) / 4);
+}
+
 // console.log("El área del triángulo es: ", areaTriangulo, "cm^2");
 console.groupEnd();
 // Código del triángulo
@@ -146,4 +150,15 @@ function calcularAreaCirculo() {
   const area = areaCirculo(radio);
 
   alert(area);
+}
+
+function calcularAlturaIsosceles() {
+  const inputLadoIsosceles = document.getElementById("inputLadoIsosceles");
+  const lado = inputLadoIsosceles.value;
+  const inputBaseIsosceles = document.getElementById("inputBaseIsosceles");
+  const base = inputBaseIsosceles.value;
+
+  const altura = alturaTrianguloIsosceles(base, lado);
+
+  alert(altura);
 }
