@@ -130,3 +130,20 @@ function calcularAreaTriangulo() {
 
   alert(area);
 }
+
+function calcularPerimetroCirculo() {
+  const inputRadio = document.getElementById("inputRadio");
+  const radio = inputRadio.value;
+
+  const perimetro = perimetroCirculo(radio);
+
+  alert(perimetro);
+}
+function calcularAreaCirculo() {
+  const inputRadio = document.getElementById("inputRadio");
+  const radio = inputRadio.value;
+
+  const area = areaCirculo(radio);
+
+  alert(area);
+}
